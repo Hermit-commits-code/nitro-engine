@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITRO ENGINE // BENCHMARK_CORE</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="engine-wrapper">
+      <!-- Header Readout Panel -->
+      <header class="engine-header">
+        <div class="header-title">CORE://NITRO ENGINE v1</div>
+        <div class="header-alert" id="sys-alert">STATUS: STANDBY</div>
+      </header>
+      <!-- INTERACTIVE BENCHMARK SCREEN -->
+      <main class="control-room">
+        <div class="telemetry-box">
+          <div class="data-label">CYCLES COMPLETED:</div>
+          <div class="data-value" id="cycle-counter">0000/1000</div>
+        </div>
+
+        <!-- THe Core track for the loading line -->
+        <div class="track-container">
+          <div class="track-bar" id="load-line"></div>
+        </div>
+
+        <button class="overclock-trigger" id="action-btn" onclick=engageOverclock()>
+          ENGAGE OVERCLOCK
+        </button>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+
+</html>

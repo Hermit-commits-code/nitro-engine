@@ -1,0 +1,97 @@
+:root {
+  --bg-dark: #020506;
+  --neon-cyan: #00f3ff;
+  --acid-yellow: #fce300;
+  --alert-pink: #ff0055;
+  --font-mono: monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  font-family: var(--font-mono);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.engine-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--neon-cyan);
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.header-title {
+  color: var(--neon-cyan);
+}
+
+.header-alert {
+  color: #88aabb;
+}
+
+.control-room {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.telemetry-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+
+.data-value {
+  color: var(--neon-cyan);
+  font-weight: bold;
+}
+
+.track-container {
+  width: 100%;
+  height: 20px;
+  border: 1px solid var(--neon-cyan);
+  background-color: rgba(0, 243, 255, 0.05);
+  overflow: hidden;
+}
+
+.track-bar {
+  width: 0%;
+  height: 100%;
+  background-color: var(--neon-cyan);
+}
+
+.overclock-trigger {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--acid-yellow);
+  color: var(--acid-yellow);
+  padding: 1rem;
+  font-family: var(--font-mono);
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.overclock-trigger:hover {
+  background-color: var(--acid-yellow);
+  color: #020506;
+}
+
+/* Warning Overrides when processing spikes */
+.critical-bar {
+  background-color: var(--alert-pink) !important;
+}
+
+.critical-text {
+  color: var(--alert-pink) !important;
+}
