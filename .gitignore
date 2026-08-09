@@ -1,0 +1,5 @@
+# Local system environment configurations
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
