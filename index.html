@@ -18,8 +18,16 @@
       <!-- INTERACTIVE BENCHMARK SCREEN -->
       <main class="control-room">
         <div class="telemetry-box">
-          <div class="data-label">CYCLES COMPLETED:</div>
-          <div class="data-value" id="cycle-counter">0000/1000</div>
+          <div class="data-label">Math Steps Run:</div>
+          <div class="data-value" id="cycle-counter">0,000,000</div>
+        </div>
+        <div class="telemetry-box">
+          <div class="data-label">Compute Time:</div>
+          <div class="data-value" id="time-counter">0.00s</div>
+        </div>
+        <div class="telemetry-box">
+          <div class="data-label">Calculated Pi</div>
+          <div class="data-value" id="pi-counter">0.00000000</div>
         </div>
 
         <!-- THe Core track for the loading line -->
@@ -28,7 +36,7 @@
         </div>
 
         <button class="overclock-trigger" id="action-btn" onclick=engageOverclock()>
-          ENGAGE OVERCLOCK
+          ENGAGE MATH STRESS TEST
         </button>
       </main>
     </div>
